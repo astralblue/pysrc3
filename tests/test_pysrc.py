@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""
-test_pysrc
-----------------------------------
-
-Tests for `pysrc` module.
-"""
+"""Tests for the `pysrc` module."""
 
 
 import sys
@@ -15,14 +10,14 @@ import unittest
 from pysrc import pysrc
 
 
-
 class TestPysrc(unittest.TestCase):
+    """The main test case."""
 
     def setUp(self):
-        pass
+        """Set up fixtures."""
 
     def tearDown(self):
-        pass
+        """Tear down fixtures."""
 
     def test_000_something(self):
-        pass
+        """A test case."""

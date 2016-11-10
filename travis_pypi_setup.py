@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Update encrypted deploy password in Travis config file
-"""
+"""Update encrypted deploy password in Travis config file."""
 
 
 from __future__ import print_function
@@ -27,8 +26,10 @@ TRAVIS_CONFIG_FILE = os.path.join(
 
 
 def load_key(pubkey):
-    """Load public RSA key, with work-around for keys using
-    incorrect header/footer format.
+    """
+    Load public RSA key.
+
+    Work around keys using incorrect header/footer format.
 
     Read more about RSA encryption with cryptography:
     https://cryptography.io/latest/hazmat/primitives/asymmetric/rsa/
@@ -67,8 +68,7 @@ def fetch_public_key(repo):
 
 
 def prepend_line(filepath, line):
-    """Rewrite a file adding a line to its beginning.
-    """
+    """Rewrite a file adding a line to its beginning."""
     with open(filepath) as f:
         lines = f.readlines()
 
@@ -79,19 +79,19 @@ def prepend_line(filepath, line):
 
 
 def load_yaml_config(filepath):
+    """Load a YAML-based config from *filepath*."""
     with open(filepath) as f:
         return yaml.load(f)
 
 
 def save_yaml_config(filepath, config):
+    """Save *config* in YAML format into *filepath*."""
     with open(filepath, 'w') as f:
         yaml.dump(config, f, default_flow_style=False)
 
 
 def update_travis_deploy_password(encrypted_password):
-    """Update the deploy section of the .travis.yml file
-    to use the given encrypted password.
-    """
+    """Update the ``.travis.yml`` file with the given deployment password."""
     config = load_yaml_config(TRAVIS_CONFIG_FILE)
 
     config['deploy']['password'] = dict(secure=encrypted_password)
@@ -104,6 +104,7 @@ def update_travis_deploy_password(encrypted_password):
 
 
 def main(args):
+    """The main routine."""
     public_key = fetch_public_key(args.repo)
     password = args.password or getpass('PyPI password: ')
     update_travis_deploy_password(encrypt(public_key, password.encode()))

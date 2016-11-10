@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""The setup script of pysrc."""
+
 from setuptools import setup
 
 with open('README.rst') as readme_file:
@@ -20,7 +22,8 @@ test_requirements = [
 setup(
     name='pysrc',
     version='0.1.0',
-    description="Opens the source file of Python modules in an editor, a pager, or any other program of choice.",
+    description="Opens the source file of Python modules in an editor, "
+                "a pager, or any other program of choice.",
     long_description=readme + '\n\n' + history,
     author="Eugene M. Kim",
     author_email='astralblue@gmail.com',
