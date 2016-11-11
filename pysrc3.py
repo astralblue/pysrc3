@@ -1,7 +1,3 @@
-__author__ = """Eugene M. Kim"""
-__email__ = 'astralblue@gmail.com'
-__version__ = '0.1.1'
-
 """Opens the source file of Python modules in a program of choice."""
 
 import sys
@@ -14,6 +10,10 @@ from importlib import import_module
 from contextlib import contextmanager, ExitStack
 from tempfile import NamedTemporaryFile
 from subprocess import call
+
+__author__ = """Eugene M. Kim"""
+__email__ = 'astralblue@gmail.com'
+__version__ = '0.1.1'
 
 
 class Tool (metaclass=ABCMeta):
