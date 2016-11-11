@@ -1,6 +1,6 @@
 __author__ = """Eugene M. Kim"""
 __email__ = 'astralblue@gmail.com'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 """Opens the source file of Python modules in a program of choice."""
 
