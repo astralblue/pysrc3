@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""The setup script of pysrc."""
+"""The setup script of pysrc3."""
 
 from setuptools import setup
 
@@ -18,19 +18,19 @@ test_requirements = [
 ]
 
 setup(
-    name='pysrc',
+    name='pysrc3',
     version='0.1.1',
     description="Opens the source file of Python modules in an editor, "
                 "a pager, or any other program of choice.",
     long_description=readme + '\n\n' + history,
     author="Eugene M. Kim",
     author_email='astralblue@gmail.com',
-    url='https://github.com/astralblue/pysrc',
-    py_modules=['pysrc'],
+    url='https://github.com/astralblue/pysrc3',
+    py_modules=['pysrc3'],
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
-    keywords='pysrc',
+    keywords='pysrc3',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

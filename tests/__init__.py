@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-"""pysrc unit test package."""
+"""pysrc3 unit test package."""

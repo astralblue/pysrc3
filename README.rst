@@ -1,20 +1,20 @@
 ===============================
-pysrc
+pysrc3
 ===============================
 
 
-.. image:: https://img.shields.io/pypi/v/pysrc.svg
-        :target: https://pypi.python.org/pypi/pysrc
+.. image:: https://img.shields.io/pypi/v/pysrc3.svg
+        :target: https://pypi.python.org/pypi/pysrc3
 
-.. image:: https://img.shields.io/travis/astralblue/pysrc.svg
-        :target: https://travis-ci.org/astralblue/pysrc
+.. image:: https://img.shields.io/travis/astralblue/pysrc3.svg
+        :target: https://travis-ci.org/astralblue/pysrc3
 
-.. image:: https://readthedocs.org/projects/pysrc/badge/?version=latest
-        :target: https://pysrc.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/pysrc3/badge/?version=latest
+        :target: https://pysrc3.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/astralblue/pysrc/shield.svg
-     :target: https://pyup.io/repos/github/astralblue/pysrc/
+.. image:: https://pyup.io/repos/github/astralblue/pysrc3/shield.svg
+     :target: https://pyup.io/repos/github/astralblue/pysrc3/
      :alt: Updates
 
 
@@ -22,7 +22,7 @@ Opens the source file of Python modules in an editor, a pager, or any other prog
 
 
 * Free software: MIT license
-* Documentation: https://pysrc.readthedocs.io.
+* Documentation: https://pysrc3.readthedocs.io.
 
 
 Features

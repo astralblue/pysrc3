@@ -48,7 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 
 lint: ## check style with flake8
-	flake8 pysrc tests
+	flake8 pysrc3 tests
 
 test: ## run tests quickly with the default Python
 		python setup.py test
@@ -57,13 +57,13 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-		coverage run --source pysrc setup.py test
+		coverage run --source pysrc3 setup.py test
 		coverage report -m
 		coverage html
 		$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/pysrc.rst
+	rm -f docs/pysrc3.rst
 	rm -f docs/modules.rst
 	sphinx-apidoc -o docs/ . setup.py tests docs travis_pypi_setup.py
 	$(MAKE) -C docs clean

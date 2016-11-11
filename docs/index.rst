@@ -1,4 +1,4 @@
-Welcome to pysrc's documentation!
+Welcome to pysrc3's documentation!
 ======================================
 
 Contents:

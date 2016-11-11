@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use pysrc in a project::
+To use pysrc3 in a project::
 
-    import pysrc
+    import pysrc3

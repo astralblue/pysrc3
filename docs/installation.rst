@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install pysrc, run this command in your terminal:
+To install pysrc3, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install pysrc
+    $ pip install pysrc3
 
-This is the preferred method to install pysrc, as it will always install the most recent stable release. 
+This is the preferred method to install pysrc3, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for pysrc can be downloaded from the `Github repo`_.
+The sources for pysrc3 can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/astralblue/pysrc
+    $ git clone git://github.com/astralblue/pysrc3
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/astralblue/pysrc/tarball/master
+    $ curl  -OL https://github.com/astralblue/pysrc3/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/astralblue/pysrc
-.. _tarball: https://github.com/astralblue/pysrc/tarball/master
+.. _Github repo: https://github.com/astralblue/pysrc3
+.. _tarball: https://github.com/astralblue/pysrc3/tarball/master
