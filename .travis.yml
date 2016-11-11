@@ -1,28 +1,17 @@
-# Config file for automatic testing at travis-ci.org
-# This file will be regenerated if you run travis_pypi_setup.py
-
 language: python
 python: 3.5
-
 env:
-  - TOXENV=py35
-  - TOXENV=py34
-  - TOXENV=py33
-
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+- TOXENV=py35
+- TOXENV=py34
+- TOXENV=py33
 install: pip install -U tox
-
-# command to run tests, e.g. python setup.py test
 script: tox -e ${TOXENV}
-
-# After you create the Github repo and add it to Travis, run the
-# travis_pypi_setup.py script to finish PyPI deployment setup
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   user: astralblue
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: Z3CQrtyq1pduU7tjKIl49IQa10K3vCExU+RBTqKoD9POPXNgBdNFpvlQOfcXX6Eid7/cE+wRDqPs7nSIjQnKSBzqzy4TJGrEBgkCDlhdfhB0YB3ebc/YbywsHuYmEmKpo7dLVudIjJrIfyc5+L+eBulKsv6YI8hdbIYo6weAWCou2ADLE7nCi6pmDPQ/ZToEsT5H3aRxDDt0wCvVpQNQEXsEEWNUtI7rw3qGaZuOgB/OVDPAV2LFqiqaUhwfhEhFpUhxMD0zR9+sMohP3+y9/EtJBKC7fxZXpxbVHINl7LMjS3fIVnRzpkLjLtD4MSCbz1d0A/+WZkmsr70ivHwZ7XuAC68USkbHgY9gS98TlYszX+CX04QoNtSM2bJddfion2Kd77SOWi+lKfMM6AYP1QXX0TE4IsitLLCfizNIhVLxE7uVF2/+GHE10mWpH3Yp91lDqpaE63hOfIYmJ4XpgGAY13wBJUOXmNQDsuedK4ZAbZ54ZluSy1JnUkJAPoYKaX/1u7Tvt/FUW3v9RJ9HxpTCJNnrA9fiKTgIh69AbC2SsCX01DH8BqhuLPAHXm/kQo4yBAoLkBMHR5DDEF2pCk5SD//aCVn2+Pdyof6BTgqbEf6gG09Qpyx4ztanTW1LbMSaYQUfVARvPpolSRxTxd0nxJ87WUyYxm418dBO/1U=
   on:
     tags: true
     repo: astralblue/pysrc
