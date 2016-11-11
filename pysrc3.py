@@ -13,7 +13,7 @@ from collections.abc import Iterable    # noqa: F401
 from importlib import import_module
 from contextlib import contextmanager, ExitStack
 from tempfile import NamedTemporaryFile
-from subprocess import run
+from subprocess import call
 
 
 class Tool (metaclass=ABCMeta):
@@ -106,7 +106,7 @@ class ProgramTool (FileTool):
         if not args:
             raise ValueError("empty program: {!r}".format(prog))
         args.extend(filenames)
-        run(args)
+        call(args)
 
     @abstractmethod
     def get_prog(self):
