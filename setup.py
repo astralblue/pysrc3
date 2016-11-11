@@ -12,11 +12,9 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    # TODO: put package requirements here
 ]
 
 test_requirements = [
-    # TODO: put package test requirements here
 ]
 
 setup(
@@ -28,12 +26,7 @@ setup(
     author="Eugene M. Kim",
     author_email='astralblue@gmail.com',
     url='https://github.com/astralblue/pysrc',
-    packages=[
-        'pysrc',
-    ],
-    package_dir={'pysrc':
-                 'pysrc'},
-    include_package_data=True,
+    py_modules=['pysrc'],
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
