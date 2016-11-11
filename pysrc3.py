@@ -13,7 +13,7 @@ from subprocess import call
 
 __author__ = """Eugene M. Kim"""
 __email__ = 'astralblue@gmail.com'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 
 class Tool (metaclass=ABCMeta):
