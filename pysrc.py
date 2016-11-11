@@ -1,3 +1,7 @@
+__author__ = """Eugene M. Kim"""
+__email__ = 'astralblue@gmail.com'
+__version__ = '0.1.0'
+
 """Opens the source file of Python modules in a program of choice."""
 
 import sys
@@ -21,7 +25,7 @@ class Tool (metaclass=ABCMeta):
         Open the given *modules* with this tool.
 
         :param modules: fully-qualified module names to open.
-        :type modules: `Iterable` of `str`-ings
+        :type modules: iterable of `str`-ings
         """
 
 
@@ -89,7 +93,7 @@ class FileTool (Tool):
         Open the given files.
 
         :param filenames: names of the files to open.
-        :type filenames: `Iterable` of `str`-ings
+        :type filenames: iterable of `str`-ings
         """
 
 
@@ -107,7 +111,7 @@ class ProgramTool (FileTool):
     @abstractmethod
     def get_prog(self):
         """
-        Get the program with which to `_open_files()`.
+        Get the program with which to open files.
 
         To be implemented by subclasses.
 
@@ -258,9 +262,10 @@ class CustomToolAction (Action, metaclass=ABCMeta):
         Get a custom tool from the given argument *value*.
 
         :param `str` value:
-            the argument value passed in from `ArgumentParser`.  Its semantics
-            are defined by actual implementation of this method, and varies
-            from subclass to subclass.
+            the argument value passed in from the `argument parser
+            <argparse.ArgumentParser>`.  Its semantics are defined by actual
+            implementation of this method, and varies from subclass to
+            subclass.
         :return: a tool instance created from *value*.
         :rtype: `Tool`
         """
