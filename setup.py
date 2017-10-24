@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='pysrc3',
-    version='0.1.2',
+    version='0.1.3',
     description="Opens the source file of Python modules in an editor, "
                 "a pager, or any other program of choice.",
     long_description=readme + '\n\n' + history,
