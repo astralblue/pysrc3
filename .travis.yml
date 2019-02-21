@@ -5,8 +5,8 @@ python:
 - 3.6
 - 3.5
 - 3.4
-- pypy3.6
-- pypy3.5
+- pypy3.6-7.0
+- pypy3.5-7.0
 install: pip install -U tox-travis
 script: tox
 deploy:
